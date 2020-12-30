@@ -9,19 +9,17 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       id_categories: {
-        allowNull: false,
         type: Sequelize.INTEGER,
-        references: {
-          model: 'Categories',
-          key: 'id'
+        references:{
+          model:'Categories',
+          key:'id'
         }
       },
       id_producer: {
-        allowNull: false,
         type: Sequelize.INTEGER,
-        references: {
-          model: 'Producers',
-          key: 'id'
+        references:{
+          model:'User_Accounts',
+          key:'id'
         }
       },
       image: {

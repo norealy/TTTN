@@ -3,6 +3,5 @@ npx sequelize-cli model:generate --name User_Profile --attributes id_user:intege
 npx sequelize-cli model:generate --name Categories --attributes name:string
 npx sequelize-cli model:generate --name Producer --attributes name:string
 npx sequelize-cli model:generate --name Product --attributes id_categories:integer,id_producer:integer,image:string,price:integer,description:string,discount:integer,count_product:integer
-npx sequelize-cli model:generate --name Bill --attributes id_user:integer,total_money:float
-npx sequelize-cli model:generate --name Details_bill --attributes id_bill:integer,id_product:integer,count_product:integer,price:integer,discount:integer
-
+npx sequelize-cli model:generate --name Order --attributes id_user:integer,total_money:float
+npx sequelize-cli model:generate --name Orders_list --attributes id_order:integer,id_product:integer,count_product:integer,price:integer,discount:integer

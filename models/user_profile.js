@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      models.User_Profile.HasOne('User_Account')
+      // models.User_Account.hasOne(User_Profile,{as:'user-account'})
     }
   };
   User_Profile.init({
